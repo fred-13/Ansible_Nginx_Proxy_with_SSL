@@ -1,0 +1,16 @@
+---
+
+- name: Ensure nginx is installed.
+  package:
+    name: nginx
+    state: present
+
+- name: Ensure PIP package-manager is installed.
+  package:
+    name: python-pip
+    state: latest
+
+- name: install latest pyOpenSSL module if needed
+  pip:
+    name: pyOpenSSL
+    state: latest

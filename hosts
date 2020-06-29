@@ -1,0 +1,8 @@
+[all]
+nginx ansible_host=192.168.123.11 ansible_user=root ip=192.168.123.11
+
+[nginx-nodes]
+nginx
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python
