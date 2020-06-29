@@ -15,9 +15,9 @@
     path: "{{ cert_dir }}/nginx_csr.csr"
     privatekey_path: "{{ cert_dir }}/nginx_key.pem"
     country_name: RU
-    organization_name: GPB
-    email_address: example@gpb.ru
-    common_name: gpb.ru
+    organization_name: Example
+    email_address: example@example.ru
+    common_name: example.ru
 
 - name: Generate a Self Signed OpenSSL certificate
   openssl_certificate:
