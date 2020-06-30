@@ -38,7 +38,7 @@ http {
 
   server {
        listen       {{ nginx_listen_port }} ssl;
-       server_name  {{ hostvars['nginx']['ip'] }};
+       server_name  {{ hostvars[inventory_hostname]['ansible_default_ipv4']['address'] }};
 
        ssl_certificate {{ cert_dir }}/nginx_cert.crt;
        ssl_certificate_key {{ cert_dir }}/nginx_key.pem;
